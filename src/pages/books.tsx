@@ -1,4 +1,11 @@
+import Head from 'next/head'
+
 export default function Books() {
-    return <h1>Books</h1>;
+    return <div>
+                <Head>
+                    <title>Browse Books</title>
+                </Head>
+                <h1>Books</h1>
+            </div>;
   }
   
