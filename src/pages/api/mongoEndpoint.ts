@@ -1,0 +1,12 @@
+import type { NextApiRequest, NextApiResponse } from 'next'
+import clientPromise from '../../lib/mongo/db'
+
+export default async function handler(
+    req: NextApiRequest,
+    res: NextApiResponse
+) {
+    const client = await clientPromise
+    const db = client.db()
+
+    // use db to query your MongoDB database
+}
