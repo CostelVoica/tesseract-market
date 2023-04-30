@@ -19,7 +19,9 @@ type Book = {
 export async function getServerSideProps() {
     try {
         let response = await fetch('http://localhost:3000/api/getBooks')
+        console.log('response issssss: ', response)
         let books = await response.json()
+        console.log('books as json: ', books)
 
         return {
             props: { books: JSON.parse(JSON.stringify(books)) },

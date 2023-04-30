@@ -7,17 +7,15 @@ export default async function handler(
 ) {
     try {
         const client = await clientPromise
-        console.log('logging client in getBooks endpoint: ', client)
-        const db = client.db()
+        const db = client.db('myScifiDatabase')
 
         // use db to query your MongoDB database
 
         const books = await db.collection('books').find({}).toArray()
         console.log(
-            'Successfully connected to MongoDB and obtained a the books collection',
+            'Successfully connected to MongoDB and obtained the following books collection: ',
             books
         )
-        res.status(200).json(books)
         res.json(books)
     } catch (error) {
         console.error(error)
