@@ -19,9 +19,11 @@ if (process.env.NODE_ENV === 'development') {
         globalWithMongo._mongoClientPromise = client.connect()
     }
     clientPromise = globalWithMongo._mongoClientPromise
+    console.log('connected to clientPromise dev mode in db.ts')
 } else {
     client = new MongoClient(uri!)
     clientPromise = client.connect()
+    console.log('connected to clientPromise nondev mode in db.ts')
 }
 
 export default clientPromise
