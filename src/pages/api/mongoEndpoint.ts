@@ -1,7 +1,7 @@
 // bad endpoint
 
 import type { NextApiRequest, NextApiResponse } from 'next'
-import clientPromise from '../../lib/mongo/db'
+import clientPromise from '../../lib/utils/mongo/db'
 
 // export default async function handler(
 //     req: NextApiRequest,
