@@ -42,7 +42,6 @@ export default function Books(props: Props) {
             </Head>
             <h1>Books</h1>
             <div>
-                {' '}
                 {books.map((book) => (
                     <div key={`book-${book._id}`}>
                         <h2>{book.title}</h2>
