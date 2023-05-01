@@ -37,6 +37,7 @@ export async function getServerSideProps() {
 export default function Books(props: Props) {
     const [books, setBooks] = useState<[Book]>(props.books)
     console.log('books array: ', books)
+    console.log('THIS PROJECT IS WORKING')
 
     return (
         <div>
