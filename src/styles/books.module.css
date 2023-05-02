@@ -1,4 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+}
+
 .books-container {
-    height: 200px;
+    height: 400px;
     overflow: scroll;
   }
