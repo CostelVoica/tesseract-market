@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { useState } from 'react'
+import Image from 'next/image'
+import styles from '../styles/books.module.css'
 
 type Props = {
     books: [Book]
@@ -12,7 +14,7 @@ type Book = {
     description: String
     price: String
     quantity: String
-    image: any
+    imageURL: any
     categories: [String]
 }
 
@@ -42,12 +44,17 @@ export default function Books(props: Props) {
                 <title>Browse Books</title>
             </Head>
             <h1>Books</h1>
-            <div>
+            <div className={styles['books-container']}>
                 {books.map((book) => (
                     <div key={`book-${book._id}`}>
                         <h2>{book.title}</h2>
                         <p>{book.author}</p>
-                        {/* <img src={book.image} alt={book.title} /> */}
+                        <Image
+                            src={`/${book.title}.jpg`}
+                            height="100"
+                            width="100"
+                            alt={book.title.toString()}
+                        />
                     </div>
                 ))}
             </div>
