@@ -20,9 +20,7 @@ type Book = {
 
 export async function getServerSideProps() {
     try {
-        let response = await fetch(
-            'http://scifi-ecommerce.vercel.app/api/getBooks'
-        )
+        let response = await fetch('http://localhost:3000/api/getBooks')
         let books = await response.json()
 
         return {
@@ -46,19 +44,21 @@ export default function Books(props: Props) {
                 <title>Browse Books</title>
             </Head>
             <h1>Books</h1>
-            <div className={styles['books-container']}>
-                {books.map((book) => (
-                    <div key={`book-${book._id}`}>
-                        <h2>{book.title}</h2>
-                        <p>{book.author}</p>
-                        <Image
-                            src={`/${book.title}.jpg`}
-                            height="100"
-                            width="100"
-                            alt={book.title.toString()}
-                        />
-                    </div>
-                ))}
+            <div className={styles.container}>
+                <div className={styles['books-container']}>
+                    {books.map((book) => (
+                        <div key={`book-${book._id}`}>
+                            <h2>{book.title}</h2>
+                            <p>{book.author}</p>
+                            <Image
+                                src={`/${book.title}.jpg`}
+                                height="100"
+                                width="100"
+                                alt={book.title.toString()}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )
