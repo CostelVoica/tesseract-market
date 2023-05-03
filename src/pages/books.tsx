@@ -20,7 +20,7 @@ type Book = {
 
 export async function getServerSideProps() {
     try {
-        let response = await fetch('http://scifi-ecommerce.vercel.app/api/getBooks')
+        let response = await fetch('http://tesseract-market.vercel.app/api/getBooks')
         let books = await response.json()
 
         return {
