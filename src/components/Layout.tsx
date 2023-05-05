@@ -1,13 +1,22 @@
 import React, { PropsWithChildren } from 'react'
 import Navbar from './Navbar'
-import Body from './Body'
+import CircuitComponentOne from './CircuitComponentOne'
+import CircuitComponentThree from './CircuitComponentThree'
+import CircuitComponentTwo from './CircuitComponentTwo'
+import styles from '../styles/layout.module.css'
 
 const Layout = ({ children }: PropsWithChildren) => {
     return (
         <>
             <Navbar />
-            <Body />
-            {children}
+            <div className={styles.layout}>
+                <div>
+                    <CircuitComponentOne />
+                    <CircuitComponentTwo />
+                    <CircuitComponentThree />
+                </div>
+                {children}
+            </div>
         </>
     )
 }
