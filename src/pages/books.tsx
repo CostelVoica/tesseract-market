@@ -18,7 +18,7 @@ type Book = {
     categories: [String]
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     try {
         let response = await fetch('http://localhost:3000/api/getBooks')
         let books = await response.json()
