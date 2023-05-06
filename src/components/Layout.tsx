@@ -8,7 +8,7 @@ const Layout = ({ children }: PropsWithChildren) => {
         <>
             <Navbar />
             <div className={styles.layout}>
-                <div>
+                <div className={styles.circuits}>
                     <CircuitComponent
                         src={'/CircuitOne.svg'}
                         width={160}
@@ -31,8 +31,8 @@ const Layout = ({ children }: PropsWithChildren) => {
                         mirrorBool={false}
                     />
                 </div>
-                {children}
-                <div>
+                <div className={styles.body}>{children}</div>
+                <div className={styles.circuits}>
                     <CircuitComponent
                         src={'/CircuitOne.svg'}
                         width={160}

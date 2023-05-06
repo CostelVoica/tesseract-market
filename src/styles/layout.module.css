@@ -1,3 +1,18 @@
 .layout {
     display: flex;
+    justify-content: space-between;
+  }
+
+.circuits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+  .body {
+  }
+
+  .body__link:hover {
+    color: #6ae7df;
   }
