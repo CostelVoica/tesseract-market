@@ -8,7 +8,7 @@ function Navbar() {
             <div className={styles.navbar__logo}>
                 <Link href="/">
                     <Image
-                        src="/tesseractMarketLogo.png"
+                        src="/tesseractMarketLogo.svg"
                         alt="Tesseract Market"
                         width={100}
                         height={20}

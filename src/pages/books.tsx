@@ -18,7 +18,7 @@ type Book = {
     categories: [String]
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     try {
         let response = await fetch('http://tesseract-market.vercel.app/api/getBooks')
         let books = await response.json()
@@ -43,7 +43,6 @@ export default function Books(props: Props) {
             <Head>
                 <title>Browse Books</title>
             </Head>
-            <h1>Books</h1>
             <div className={styles.container}>
                 <div className={styles['books-container']}>
                     {books.map((book) => (
