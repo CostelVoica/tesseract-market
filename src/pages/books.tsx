@@ -43,7 +43,6 @@ export default function Books(props: Props) {
             <Head>
                 <title>Browse Books</title>
             </Head>
-            <h1>Books</h1>
             <div className={styles.container}>
                 <div className={styles['books-container']}>
                     {books.map((book) => (
