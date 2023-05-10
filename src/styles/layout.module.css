@@ -15,6 +15,6 @@
     height: 100vh;
   text-align: center;  }
 
-  .body__link:hover {
+  .body__link {
     color: #6ae7df;
   }
