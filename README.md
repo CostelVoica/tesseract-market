@@ -1,6 +1,6 @@
 # tesseract-market
 
-AI generated books ecommerce website. Check it out at (https://tesseract-market.vercel.app/)
+AI generated books ecommerce website. Check it out at https://tesseract-market.vercel.app/
 
 ## Stack
 
