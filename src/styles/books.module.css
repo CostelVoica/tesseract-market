@@ -7,19 +7,6 @@
 
 }
 
-/* .books-container {
-  height: 600px;
-  width: 800px;
-  overflow: scroll;
-  background-color: #351f5e;
-  border-radius: 10px;
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  align-items: center;
-} */
-
 .book-container {
   width: 200px;
   padding: 10px;
