@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/layout.module.css'
+let test = {}
 
 export default function Cart() {
     return (
