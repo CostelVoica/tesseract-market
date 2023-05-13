@@ -20,7 +20,9 @@ type Book = {
 
 export async function getStaticProps() {
     try {
-        let response = await fetch('http://tesseract-market.vercel.app/api/getBooks')
+        let response = await fetch(
+            'http://tesseract-market.vercel.app/api/getBooks'
+        )
         let books = await response.json()
 
         return {
@@ -46,15 +48,22 @@ export default function Books(props: Props) {
             <div className={styles.container}>
                 <div className={styles['books-container']}>
                     {books.map((book) => (
-                        <div key={`book-${book._id}`}>
-                            <h2>{book.title}</h2>
-                            <p>{book.author}</p>
-                            <Image
-                                src={`/${book.title}.jpg`}
-                                height="100"
-                                width="100"
-                                alt={book.title.toString()}
-                            />
+                        <div
+                            className={styles['inside-container']}
+                            key={`book-${book._id}`}
+                        >
+                            <div className={styles['book-container']}>
+                                <h2>{book.title}</h2>
+                                <Image
+                                    src={`/${book.title}.jpg`}
+                                    height="100"
+                                    width="100"
+                                    alt={book.title.toString()}
+                                />
+                            </div>
+                            <div className={styles.price}>
+                                <h1>Price: {book.price}</h1>
+                            </div>
                         </div>
                     ))}
                 </div>
