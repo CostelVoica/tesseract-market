@@ -12,13 +12,18 @@ export default function Home() {
             <Head>
                 <title>Tesseract Market</title>
             </Head>
-            <h1>
-                Welcome to Tesseract Market! Come browse our AI generated{' '}
-                <Link href="/books" className={styles.body__link}>
-                    books
-                </Link>
-                . Better website element alignment is being implemented.
-            </h1>
+            <div className={styles.container}>
+                <div className={styles['center-container']}>
+                    <h1>
+                        Welcome to Tesseract Market! Come browse our AI
+                        generated{' '}
+                        <Link href="/books" className={styles.body__link}>
+                            books
+                        </Link>
+                        . Better website element alignment is being implemented.
+                    </h1>
+                </div>
+            </div>
         </div>
     )
 }

@@ -7,7 +7,7 @@
 
 }
 
-.books-container {
+/* .books-container {
   height: 600px;
   width: 800px;
   overflow: scroll;
@@ -18,7 +18,7 @@
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
-}
+} */
 
 .book-container {
   width: 200px;
