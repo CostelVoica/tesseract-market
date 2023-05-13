@@ -4,9 +4,34 @@
   align-items: center;
   height: 750px;
   text-align: left;
+
 }
 
 .books-container {
-    height: 400px;
-    overflow: scroll;
-  }
+  height: 600px;
+  width: 800px;
+  overflow: scroll;
+  background-color: #351f5e;
+  border-radius: 10px;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.book-container {
+  width: 200px;
+  padding: 10px;
+
+}
+
+.inside-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.price {
+  align-self: flex-end;
+  color: #6ae7df;
+}
