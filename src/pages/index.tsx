@@ -23,7 +23,7 @@ export default function Home() {
                         <Link href="/books" className={layoutStyles.body__link}>
                             books
                         </Link>
-                        . Better website element alignment is being implemented.
+                        . (This website is a work-in-progress.)
                     </h1>
                 </div>
             </div>
