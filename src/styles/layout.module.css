@@ -24,7 +24,7 @@
   .center-container {
     height: 600px;
     width: 800px;
-    overflow: scroll;
+    overflow: hidden;
     background-color: #351f5e;
     border-radius: 10px;
     font-size: large;
