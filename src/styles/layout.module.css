@@ -3,13 +3,6 @@
     justify-content: space-between;
   }
 
-.circuits {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-}
-
   .body {
     background-image: url("/Background Image.svg");
     height: 100vh;
@@ -17,4 +10,26 @@
 
   .body__link {
     color: #6ae7df;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    text-align: left;
+  
+  }
+
+  .center-container {
+    height: 600px;
+    width: 800px;
+    overflow: scroll;
+    background-color: #351f5e;
+    border-radius: 10px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
   }

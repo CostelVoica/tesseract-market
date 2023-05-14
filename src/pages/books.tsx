@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import { useState } from 'react'
 import Image from 'next/image'
-import styles from '../styles/books.module.css'
+let styles = {}
+import booksStyles from '../styles/books.module.css'
+import layoutStyles from '../styles/layout.module.css'
+Object.assign(styles, booksStyles, layoutStyles)
 
 type Props = {
     books: [Book]
@@ -45,14 +48,14 @@ export default function Books(props: Props) {
             <Head>
                 <title>Browse Books</title>
             </Head>
-            <div className={styles.container}>
-                <div className={styles['books-container']}>
+            <div className={layoutStyles.container}>
+                <div className={layoutStyles['center-container']}>
                     {books.map((book) => (
                         <div
-                            className={styles['inside-container']}
+                            className={booksStyles['inside-container']}
                             key={`book-${book._id}`}
                         >
-                            <div className={styles['book-container']}>
+                            <div className={booksStyles['book-container']}>
                                 <h2>{book.title}</h2>
                                 <Image
                                     src={`/${book.title}.jpg`}
@@ -61,7 +64,7 @@ export default function Books(props: Props) {
                                     alt={book.title.toString()}
                                 />
                             </div>
-                            <div className={styles.price}>
+                            <div className={booksStyles.price}>
                                 <h1>Price: {book.price}</h1>
                             </div>
                         </div>
