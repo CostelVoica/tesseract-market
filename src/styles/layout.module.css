@@ -7,7 +7,7 @@
     background-image: url("/Background Image.svg");
       background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: max-content;
   text-align: center;  }
 
   .body__link {
