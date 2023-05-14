@@ -5,6 +5,8 @@
 
   .body {
     background-image: url("/Background Image.svg");
+      background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
   text-align: center;  }
 
