@@ -16,15 +16,19 @@ export default function Home() {
             </Head>
             <div className={layoutStyles.container}>
                 <div className={layoutStyles['center-container']}>
-                    <div className={homeStyles['inside-container']}></div>
-                    <h1>
-                        Welcome to Tesseract Market! Come browse our AI
-                        generated{' '}
-                        <Link href="/books" className={layoutStyles.body__link}>
-                            books
-                        </Link>
-                        . (This website is a work-in-progress.)
-                    </h1>
+                    <div className={homeStyles['inside-container']}>
+                        <h1>
+                            Welcome to Tesseract Market! Come browse our AI
+                            generated{' '}
+                            <Link
+                                href="/books"
+                                className={layoutStyles.body__link}
+                            >
+                                books
+                            </Link>
+                            . (This website is a work-in-progress.)
+                        </h1>
+                    </div>
                 </div>
             </div>
         </div>

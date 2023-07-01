@@ -1,3 +1,5 @@
 .inside-container {
-    text-align: start;
+    text-align: justify;
+    padding: 5%;
+    font-size: larger;
 }
