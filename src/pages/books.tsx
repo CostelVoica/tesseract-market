@@ -46,6 +46,10 @@ export default function Books(props: Props) {
     return (
         <div>
             <Head>
+                <script
+                    async
+                    src="https://js.stripe.com/v3/buy-button.js"
+                ></script>
                 <title>Browse Books</title>
             </Head>
             <div className={layoutStyles.container}>
